@@ -1,0 +1,186 @@
+/* =============================== */
+/*      تصميم مخصص للموبايل      */
+/* =============================== */
+
+body {
+  font-family: "Tahoma", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf5;
+  color: #3b2c1a;
+  direction: rtl;
+}
+
+.header {
+  text-align: center;
+  background-color: #6d1a1a;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.store-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.main-home {
+  padding: 10px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.main-btn {
+  background-color: #a94442;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.main-btn:hover {
+  background-color: #922d2d;
+}
+
+/* ======= بطاقات الأصناف ======= */
+
+.salad-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 15px;
+}
+
+.salad-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  min-height: 200px;
+}
+
+.salad-card img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 8px auto;
+  display: block;
+}
+
+.salad-card h3 {
+  margin: 8px 0 5px;
+  color: #6d1a1a;
+  font-size: 16px;
+}
+
+.salad-card p {
+  margin: 0 0 4px;
+  color: #3b2c1a;
+  font-size: 14px;
+}
+
+.salad-card small {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ======= صفحة المشروبات الساخنة ======= */
+
+.menu-section {
+  padding: 15px;
+}
+
+.menu-section section {
+  margin-bottom: 25px;
+  padding: 10px;
+  background-color: #f8f1ec;
+  border: 2px solid #a94442;
+  border-radius: 10px;
+  animation: fadeInUp 0.6s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+.menu-section section:nth-child(1) { animation-delay: 0.2s; opacity: 1; }
+.menu-section section:nth-child(2) { animation-delay: 0.4s; opacity: 1; }
+.menu-section section:nth-child(3) { animation-delay: 0.6s; opacity: 1; }
+.menu-section section:nth-child(4) { animation-delay: 0.8s; opacity: 1; }
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hot-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #3b2c1a;
+}
+
+.hot-menu li {
+  padding: 8px 12px;
+  background-color: #fff;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.hot-menu li:hover {
+  background-color: #fdf4ec;
+}
+
+/* ======= الفوتر ======= */
+
+.footer {
+  background-color: #6d1a1a;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #ffeaa7;
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.phones p {
+  margin: 4px 0;
+  color: #f8f8f8;
+  font-size: 13px;
+}
