@@ -185,7 +185,7 @@ body {
   font-size: 13px;
 }
 .credit-signature {
-  font-size: 5px;
+  font-size: 11px;
   color: #ccc;
   text-align: right;
   padding: 5px 15px 10px;
@@ -196,11 +196,12 @@ body {
   color: #bbb;
   text-decoration: none;
   font-weight: normal;
-  font-size: 5px;
+  font-size: 11px;
 }
 
 .credit-signature a:hover {
   text-decoration: underline;
   color: #fff;
 }
+
 
