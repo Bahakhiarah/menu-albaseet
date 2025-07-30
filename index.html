@@ -35,26 +35,11 @@
     <p><a href="tel:0796327668">📞 0796327668</a></p>
     <p><a href="tel:0799781116">📞 0799781116</a></p>
   </div>
+  
 
   <div class="credit-signature">
     تم صناعته بواسطة <span>BAHAA ABU KHIARAH</span> - <a href="tel:0790786743">0790786743</a>
   </div>
 </footer>
-
-<script>
-  const contactDiv = document.getElementById("secretContact");
-  let touchTimer;
-
-  contactDiv?.addEventListener("touchstart", () => {
-    touchTimer = setTimeout(() => {
-      contactDiv.classList.add("reveal");
-    }, 1000); // يظهر بعد الضغط المطول
-  });
-
-  contactDiv?.addEventListener("touchend", () => {
-    clearTimeout(touchTimer);
-  });
-</script>
-
 </body>
 </html>
