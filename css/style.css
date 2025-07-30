@@ -184,6 +184,21 @@ body {
   color: #f8f8f8;
   font-size: 13px;
 }
+.hidden-signature {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 5px;
+  user-select: none;
+}
+.hidden-signature a {
+  color: transparent;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+.hidden-signature.reveal a {
+  color: #ffeaa7;
+}
+
 .credit-signature {
   font-size: 11px;
   color: #ccc;
@@ -191,17 +206,13 @@ body {
   padding: 5px 15px 10px;
   direction: rtl;
 }
-
 .credit-signature a {
   color: #bbb;
   text-decoration: none;
-  font-weight: normal;
-  font-size: 11px;
 }
-
 .credit-signature a:hover {
-  text-decoration: underline;
   color: #fff;
 }
+
 
 
