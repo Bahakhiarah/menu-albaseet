@@ -3,55 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>قهوة البسيط - دكتور الكيف</title>
+  <title>البسيط الأصلي دكتور الكيف</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <img src="images/logo (2).jpg" alt="شعار قهوة البسيط" class="logo" />
-    <h1>أهلاً بكم في قهوة البسيط - دكتور الكيف</h1>
-  </header>
-  <main class="main-home">
-    <img src="images/store.jpg" alt="صورة المحل" class="store-image" />
-    <div class="buttons">
-      <a href="cold-drinks.html" class="main-btn">المشروبات الباردة</a>
-      <a href="hot-drinks.html" class="main-btn">المشروبات الساخنة</a>
-      <a href="salads.html" class="main-btn">سلطة الفواكه والأفوكادو</a>
-      <a href="special.html" class="main-btn">عصير سبيشال دكتور الكيف</a>
-      <a href="mojito.html" class="main-btn">الموهيتو</a>
-      <a href="frappe.html" class="main-btn">الفرابيه</a>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="contact-links">
-      <a href="https://wa.me/c/962796327668" target="_blank">طلب عبر واتساب</a>
-      <a href="https://web.facebook.com/baseetcofe" target="_blank">فيسبوك</a>
-      <a href="https://www.instagram.com/baseet_coffee_dr.kaif/" target="_blank">إنستغرام</a>
-    </div>
-    <div class="phones">
 
-      <a href="tel:0796327668">0796327668</a>
-     <div class="hidden-signature" id="secretContact">
-   تم صناعته بواسطة <span>BAHAA ABU KHIARAH</span> - <a href="tel:0790786743">0790786743</a>
-</div>
+<header class="header">
+  <h1>البسيط الأصلي دكتور الكيف</h1>
+  <img class="store-image" src="images/store.jpg" alt="صورة المحل" />
+</header>
 
-    </div>
-   
+<main class="main-home">
+  <div class="buttons">
+    <a href="cold-drinks.html" class="main-btn">المشروبات الباردة</a>
+    <a href="hot-drinks.html" class="main-btn">المشروبات الساخنة</a>
+    <a href="salads.html" class="main-btn">سلطة الفواكه والأفوكادو</a>
+    <a href="special.html" class="main-btn">عصير سبيشال دكتور الكيف</a>
+    <a href="mojito.html" class="main-btn">الموهيتو</a>
+    <a href="frappe.html" class="main-btn">الفرابيه</a>
+  </div>
+</main>
 
-  </footer>
-   <script>
+<footer class="footer">
+  <div class="contact-links">
+    <a href="https://wa.me/c/962796327668" target="_blank">طلب عبر واتساب</a>
+    <a href="https://web.facebook.com/baseetcofe" target="_blank">فيسبوك</a>
+    <a href="https://www.instagram.com/baseet_coffee_dr.kaif/" target="_blank">انستغرام</a>
+  </div>
+
+  <div class="phones">
+    <p><a href="tel:0796327668">📞 0796327668</a></p>
+    <p><a href="tel:0799781116">📞 0799781116</a></p>
+  </div>
+
+  <div class="hidden-signature" id="secretContact">
+    <a href="tel:0790786743">BAHAA ABU KHIARAH - 0790786743</a>
+  </div>
+
+  <div class="credit-signature">
+    تم صناعته بواسطة <span>BAHAA ABU KHIARAH</span> - <a href="tel:0790786743">0790786743</a>
+  </div>
+</footer>
+
+<script>
   const contactDiv = document.getElementById("secretContact");
   let touchTimer;
 
   contactDiv?.addEventListener("touchstart", () => {
     touchTimer = setTimeout(() => {
       contactDiv.classList.add("reveal");
-    }, 1000); // يظهر بعد الضغط المطول لمدة 1 ثانية
+    }, 1000); // يظهر بعد الضغط المطول
   });
 
   contactDiv?.addEventListener("touchend", () => {
     clearTimeout(touchTimer);
   });
 </script>
+
 </body>
 </html>
