@@ -23,11 +23,18 @@ body {
   height: auto;
 }
 
-.store-image {
-  width: 100%;
+
+  .store-image {
+  width: 90%;
+  max-width: 320px;
   max-height: 250px;
   object-fit: cover;
-  margin-bottom: 20px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 }
 
 .main-home {
